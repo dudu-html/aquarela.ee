@@ -207,7 +207,11 @@ section {
 
 
 
-
+@media (max-width: 1024px) {
+    .headline {
+        width: 100%;
+    }
+}
 
 
 
@@ -264,6 +268,19 @@ section {
 
     .ilustrate > img {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .headline > h2 > b {
+        display: block;
+        
+    }
+
+    .headline > h2 {
+        font-size: 60px;
     }
 
 }
