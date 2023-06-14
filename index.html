@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon_io/android-chrome-192x192.png" type="image/x-icon">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -19,19 +24,19 @@
                 <img src="img/logo.png" alt="Aquarela Espaço Educacional" id="logo-header">
             </a>
 
-            <ul>
+            <ul class="menu">
 
-                <li> <a href="#">Início</a> </li>
+                <li> <a href="index.html">Início</a> </li>
                 
-                <li> <a href="#">Quem Somos?</a> </li>
+                <li> <a href="quemsomos.html">Quem Somos?</a> </li>
                 
-                <li> <a href="#">Serviços</a> </li>
+                <li> <a href="servicos.html">Serviços</a> </li>
                 
-                <li> <a href="#">Localidade</a> </li>
+                <li> <a href="localidade.html">Localidade</a> </li>
 
             </ul>
 
-            <a href="#" class="btn-action btn-header">Fale Conosco</a>
+            <a href="contato.html" class="btn-action btn-header">Fale Conosco</a>
 
             <label class="burger" for="burger">
                 <input type="checkbox" id="burger">
@@ -39,7 +44,7 @@
                 <span></span>
                 <span></span>
             </label>
-
+        
         </nav>
 
     </header>
@@ -56,7 +61,7 @@
     
                     <p>Um Espaço Educacional para seu filho desenvolver habilidades impressionantes de forma aconchegante</p>
     
-                    <a href="#" class="btn-action-banner">Saiba Mais</a>
+                    <a href="#services-home" class="btn-action-banner">Saiba Mais</a>
     
                 </div>
     
@@ -70,12 +75,66 @@
 
         </section>
 
-        <section>
+        <section id="services-home">
 
-            
+            <div class="content">
+
+                <div class="heading">
+
+                    <h2 class="services-home-h2">Na Aquarela seu filho se sente em casa.</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit facere dolore nihil, quaerat quia fugiat aperiam repudiandae, molestiae cupiditate ipsam unde ab esse magni, tenetur voluptas nulla. Ipsa, exercitationem.</p>
+
+                </div>
+
+                <div class="cards">
+
+                    <div data-aos="fade-right" class="card">
+
+                        <h3>
+                            <span class="material-symbols-outlined">school</span>
+                            Serviço 1
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor vel quam nisi iure ipsa excepturi atque blanditiis quis nemo ex, ullam, corrupti perspiciatis perferendis fugiat doloremque alias accusamus reiciendis ut!</p>
+                        <a href="servicos.html">Saiba Mais<span class="material-symbols-outlined">
+                            arrow_forward
+                            </span></a>
+                    </div>
+
+                    <div data-aos="fade-right" class="card">
+
+                        <h3>
+                            <span class="material-symbols-outlined">school</span>
+                            Serviço 2
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor vel quam nisi iure ipsa excepturi atque blanditiis quis nemo ex, ullam, corrupti perspiciatis perferendis.</p>
+                        <a href="servicos.html">Saiba Mais<span class="material-symbols-outlined">
+                            arrow_forward
+                            </span></a>
+                    </div>
+
+                    <div data-aos="fade-right" class="card">
+
+                        <h3>
+                            <span class="material-symbols-outlined">school</span>  
+                            Serviço 3
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor vel quam nisi iure.!</p>
+                        <a href="servicos.html">Saiba Mais<span class="material-symbols-outlined">
+                            arrow_forward
+                            </span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     
 </body>
 </html>
