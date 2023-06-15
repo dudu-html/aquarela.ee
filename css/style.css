@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -22,11 +23,19 @@ header {
     display: flex;
     justify-content: center;
     padding: 15px 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    background-color: #fff;
 }
 
 nav {
     width: 100%;
-    background-color: #fff;
+
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +46,7 @@ nav {
     height: 80px;
 }
 
-ul {
+.menu {
     width: 50%;
     display: flex;
     /* background-color: aliceblue; */
@@ -45,7 +54,7 @@ ul {
     justify-content: space-between;
 }
 
-ul > li > a {
+.menu > li > a {
     text-decoration: none;
     font-size: 16px;
     color: #646464;
@@ -132,6 +141,8 @@ ul > li > a {
 main {
     width: 100%;
     /* background-color: palegreen; */
+    position: relative;
+    margin-top: 110px;
 }
 
 section {
@@ -233,12 +244,13 @@ section {
 #services-home > .content > .heading {
     width: 100%;
     /* background-color: red; */
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 #services-home > .content > .heading > h2 {
    font-size: 44px;
    line-height: 1.5;
+   /* margin-top: 20px; */
 }
 
 #services-home > .content > .heading > p {
@@ -321,6 +333,15 @@ section {
 
 
 @media (max-width: 1024px) {
+
+    html {
+        scroll-padding-top: 50px;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
     .headline {
         width: 100%;
     }
@@ -331,7 +352,7 @@ section {
 
     #services-home > .content > .cards .card {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 
     #services-home > .content > .heading > h2 {
@@ -342,15 +363,23 @@ section {
      #services-home > .content > .heading > p {
         font-size: 14px;
         line-height: 1.2;
-        margin-top: 15px;
+        margin-top: 25px;
         text-align: justify;
      }
 
      #services-home > .content > .heading {
         width: 100%;
         /* background-color: red; */
-        padding: 35px 0;
+        padding: 60px 0;
     }
+
+    .menu {
+        display: none;
+      }
+      
+      .show-menu .menu {
+        display: inline;
+      }
 }
 
 
@@ -361,8 +390,37 @@ section {
         padding: 10px 25px;
     }
 
-    ul {
+    nav {
+        display: block;
+    }
+
+    .content1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
         display: none;
+        padding: 0;
+    }
+
+    .menu > li {
+        margin-bottom: 20px;
+    }
+
+    .menu > li > a {
+        text-align: center;
+        display: flex;
+        justify-content: right;
+        padding: 20px 25px;
+        color: #000;
+        border-right: 5px solid #3fbbecde;
+    }
+
+    .menu > li > a:hover {
+        background-color: #d8d8d8;
     }
 
     .burger {
@@ -428,3 +486,6 @@ section {
 a:hover {
     opacity: 70%;
 }
+
+
+  
