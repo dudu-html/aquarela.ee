@@ -37,17 +37,18 @@
      }
 
      #services-home > .content > .heading > p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.2;
         margin-top: 25px;
-        text-align: justify;
+        text-align: left;
+        letter-spacing: 1px;
 
      }
 
      #services-home > .content > .heading {
         width: 100%;
         /* background-color: red; */
-        padding: 60px 0;
+        padding: 60px 0 0px 0;
     }
 
     .menu {
@@ -76,7 +77,15 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    #services-home > .content {
+        padding: 0px 0;
+    }
     
+    span.icon-menu {
+        display: initial;
+
+    }
 }
 
 @media (max-width: 1024px) {
@@ -103,15 +112,21 @@
 
     .menu > li {
         margin-bottom: 20px;
+       
     }
 
     .menu > li > a {
         text-align: center;
         display: flex;
+        align-items: center;
         justify-content: right;
         padding: 20px 25px;
         color: #000;
-        border-right: 5px solid #3fbbecde;
+        /* border-right: 5px solid #3fbbecde; */ border-bottom: 1px solid #dcdcdc;
+    }
+
+    .contato-show {
+        display: initial;
     }
 
     .menu > li > a:hover {
