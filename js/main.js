@@ -1,3 +1,4 @@
+// Funcionamento do menu em dispositivos móveis (burger)
 
 const checkbox = document.getElementById('burger');
 const menu = document.querySelector('.menu');
