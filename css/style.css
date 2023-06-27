@@ -22,7 +22,7 @@ header {
     /* background-color: palegoldenrod; */
     display: flex;
     justify-content: center;
-    padding: 15px 100px;
+    padding: 15px 80px;
     position: fixed;
     left: 0;
     right: 0;
@@ -30,6 +30,7 @@ header {
     z-index: 1;
 
     background-color: #fff;
+    height: 100px;
 }
 
 nav {
@@ -47,11 +48,13 @@ nav {
 }
 
 .menu {
-    width: 50%;
+    width: auto;
     display: flex;
     /* background-color: aliceblue; */
     list-style: none;
     justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
 
 .menu > li > a {
@@ -148,7 +151,7 @@ main {
     width: 100%;
     /* background-color: palegreen; */
     position: relative;
-    margin-top: 110px;
+    margin-top: 100px;
 }
 
 section {
@@ -290,27 +293,27 @@ section {
     height: 100%;
 }
 
-#services-home > .content > .cards > .card {
-    flex-direction: column;
+#services-home > .content > .cards > .card { 
     width: 30%;
-    display: flex;
     padding: 30px;
-    background-color: #fff;
 
-    /* -webkit-box-shadow: 0 0 10px 3px #c8b3bc;
-    -moz-box-shadow: 0 0 10px 3px #c8b3bc;
-    box-shadow: 0 0 10px 3px #c8b3bc; */
+    display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    background-color: #fff;
+    color: #F4ADCF;
+    border-radius: 15px;
 
 }
 
 #services-home > .content > .cards > .card:hover {
-    transform: translateY(-15px);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 #services-home > .content > .cards > .card > h3 {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
@@ -320,17 +323,19 @@ section {
 
 #services-home > .content > .cards > .card > p {
     margin: 20px 0;
+    color: #ababab;
 }
 
 #services-home > .content > .cards > .card > a {
     width: 100%;
-    background-color: #d1d1d1;
+    background-color: #F4ADCF;
     padding: 10px 0;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
 }
 
 #services-home > .content > .cards > .card > a > span {
@@ -343,8 +348,8 @@ a:hover {
 }
   
 .mark-casa-services {
-    text-shadow: 3px 3px #3FBAEC;
-    color: #fff;   
+    text-shadow: 3px 3px #ff6eb4;
+    color: #fff;
 }
 
 /* .services-home-h2 {
@@ -373,3 +378,69 @@ span.icon-menu {
 .redes-icons {
     display: none;
 }
+
+/*  Nosso Espaço */
+
+
+#espaco-home {
+    width: 100%;
+    background-color: #F4ADCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#espaco-home > .content{
+    width: 80%;
+    /* background-color: palegreen; */
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+#espaco-home > .content > .heading{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #F4ADCF; */
+}
+
+#espaco-home > .content > .heading > h2 {
+    font-size: 48px;
+}
+
+#espaco-home > .content > .heading > p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+
+
+
+#espaco-home > .content > .fotos {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#espaco-home > .content > .fotos > img{
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+
+#espaco-home > .content > .fotos > img:hover{
+    filter: brightness(80%);
+
+}
+
+
+
+
+
+
+

@@ -1,6 +1,22 @@
 /* RESPONSIVIDADE */
 
+@media (max-width: 1084px) {
+    .btn-action-banner, .btn2 {
+        margin: 10px 0 0 0 ;
+      }
+}
+
 @media (max-width: 1024px) {
+
+    
+
+    header {
+        height: auto;
+    }
+
+    #espaco-home > .content > .fotos {
+        grid-template-columns: 1fr;
+    }
 
     html {
         scroll-padding-top: 50px;
@@ -29,6 +45,11 @@
     #services-home > .content > .cards .card {
         width: 100%;
         margin-bottom: 40px;
+        align-items: center;
+    }
+
+    #services-home > .content > .cards .card > p {
+        text-align: center;
     }
 
     #services-home > .content > .heading > h2 {
@@ -59,10 +80,7 @@
         display: inline;
       }
 
-      .btn2 {
-        margin: 10px 0 0 0 ;
-      }
-
+      
       .btn-header {
         display: none;
       }
