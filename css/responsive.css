@@ -1,240 +1,155 @@
-/* RESPONSIVIDADE */
-
-@media (max-width: 1084px) {
-    .btn-action-banner, .btn2 {
-        margin: 10px 0 0 0 ;
-      }
-}
+@import url(./style.css);
 
 @media (max-width: 1024px) {
 
-    
-
-    header {
-        height: auto;
+    .menus {
+        /* display: none; */
+        /* height: 0; */
+        transform: translateX(100%);
+        transition: .6s;
     }
 
-    #espaco-home > .content > .fotos {
-        grid-template-columns: 1fr;
-    }
-
-    html {
-        scroll-padding-top: 50px;
-    }
-
-    main {
-        margin-top: 50px;
-    }
-
-    .headline {
-        width: 100%;
+    .labelBurger {
+        margin-left: auto;
 
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    #landing > .content > .headline > p {
-        width: 80%;
-    }
-
-    #services-home > .content > .cards {
-        flex-direction: column;
-    }
-
-    #services-home > .content > .cards .card {
-        width: 100%;
-        margin-bottom: 40px;
-        align-items: center;
-    }
-
-    #services-home > .content > .cards .card > p {
-        text-align: center;
-    }
-
-    #services-home > .content > .heading > h2 {
-        font-size: 32px;
-        text-align: left;
-     }
-
-     #services-home > .content > .heading > p {
-        font-size: 16px;
-        line-height: 1.2;
-        margin-top: 25px;
-        text-align: left;
-        letter-spacing: 1px;
-
-     }
-
-     #services-home > .content > .heading {
-        width: 100%;
-        /* background-color: red; */
-        padding: 60px 0 0px 0;
-    }
-
-    .menu {
-        display: none;
-      }
-      
-      .show-menu .menu {
-        display: inline;
-      }
-
-      
-      .btn-header {
-        display: none;
-      }
-
-      .burger {
-        display: block;
-      }
-
-      .content1 {
-        width: 100%;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
+        width: 32px;
+        height: 24px;
     }
 
-    #services-home > .content {
-        padding: 0px 0;
-    }
-    
-    span.icon-menu {
-        display: initial;
+        .labelBurger:active {
+            opacity: 40%;
+        }
 
-    }
+        .labelBurger > .row {
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: #000;
+            
+            margin-left: auto;
+        }
 
-    .redes-icons {
+        .row1 {
+            transition: .2s ease;
+        }
+
+        .row2 {
+            transition: .4s ease;
+        }
+
+        .row3 {
+            transition: .6s ease;
+        }
+
+        #Burger:checked ~ .labelBurger > .row1 {
+            background-color: red;
+        }
+
+        #Burger:checked ~ .labelBurger > .row2 {
+            background-color: red;
+            width: 75%;
+        }
+
+        #Burger:checked ~ .labelBurger > .row3 {
+            background-color: red;
+            width: 50%;
+        }
+
+    /* Ativar */
+
+    #Burger:checked ~ .menus {
         display: flex;
-        list-style: none;
-        width: 100%;
-        /* background-color: palegreen; */
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
+        transform: translateX(0%);
     }
 
-    .redes-icons > li > a > ion-icon {
-        font-size: 24px;
-        color: #000;
-        margin: 0 25px 0 25px;
+    /*  */
+
+    .menus {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: var(--alturaHeader);
+        flex-direction: column;
+        /* background-color: pink; */
+        gap: 0;
+        background-color: #fff;
     }
+
+    .menus > .menu {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+        .menu > li {
+            width: 100%;
+            display: flex;
+        }
+
+        .navlink {
+            width: 100%;
+            /* background-color: yellow; */
+            padding: 24px;
+            text-align: left;
+        }
+
+        .navlink:active , .navlink:hover {
+            background-color: #eaeaea;
+        }
+
+    .secundary-navigation {
+        width: 100%;
+    }
+
+    .social-icons {
+        background-color: #fff;
+        width: 100%;
+        padding: 24px;
+        /* justify-content: space-evenly; */
+        border-top: 1px solid #dadada;
+    }
+
+        .social-icons > hr , .cta-header {
+            display: none;
+        }
+
+        .secundary-navigation > .social-icons > li > a > ion-icon {
+            font-size: 24px;
+        }
+
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+
+    :root {
+        --alturaHeader: 80px;
+    }
 
     header {
-        padding: 10px 25px;
-    }
-
-    nav {
-        display: block;
-    }
-
-    .content1 {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu {
-        display: none;
-        padding: 0;
-    }
-
-    .menu > li {
-        margin-bottom: 20px;
-       
-    }
-
-    .menu > li > a {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        padding: 20px 25px;
-        color: #000;
-        /* border-right: 5px solid #3fbbecde; */ border-bottom: 1px solid #dcdcdc;
-    }
-
-    .contato-show {
-        display: initial;
-    }
-
-    .menu > li > a:hover {
-        background-color: #d8d8d8;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    #landing {
-        padding: 25px 0 0 0;
-    }
-
-    #logo-header {
-        width: 60px;
-        height: 60px;
-    }  
-    
-    #landing > .content {
-        width: 90%;
-    }
-
-    .headline {
-        width: 100%;
-        padding: 30px 0;
-    }
-
-    .headline > h2 {
-        font-size: 36px;
-    }
-
-    .headline > p {
-        text-align: center;
-        width: 100%;
-    }
-
-    .btn-action-banner, .btn-action-banner2 {
-        width: 80%;
-    }
-
-    .ilustrate > img {
-        width: 100%;
+        padding: 0 32px;
     }
 
 }
 
-@media (max-width: 575px) {
+@media (max-width: 425px) {
 
-    .headline > h2 > b {
-        display: block;
-        
+    header {
+        padding: 0 16px;
     }
 
-    .headline > h2 {
-        font-size: 60px;
-    }
+}
+
+@media (max-width: 375px) {
 
 }
 
 @media (max-width: 320px) {
 
-    .headline > h2 > b {
-        display: block;
-        
-    }
-
-    .headline > h2 {
-        font-size: 44px;
-    }
-
-    .text-landing {
-        display: none;
+    .menus {
+        width: 75%;
     }
 
 }
-
