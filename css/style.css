@@ -258,3 +258,14 @@ section {
 .cta {
     background-color: #40BCED;
 }
+
+.whats-link {
+    position: fixed;
+    right: 50px;
+    top: 630px;
+}
+
+.whats-img {
+    width: 80px;
+    opacity: 0.8;
+}

@@ -170,6 +170,15 @@
         width: 80%;
     }
 
+    .whats-link {
+        right: 20px;
+        top: 650px;
+    }
+    
+    .whats-img {
+        width: 80px;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -190,6 +199,7 @@
 
     .landing > .container > .hero > h2 {
         font-size: 32px;
+        width: 80%;
     }
 
     .landing > .container > .hero > .acts {
