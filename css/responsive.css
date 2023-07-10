@@ -120,6 +120,17 @@
             font-size: 24px;
         }
 
+    /* Landing Page */
+
+    .landing > .container > .hero {
+        gap: 24px;
+    }
+
+    .landing > .container > .hero > h2 {
+        font-size: 40px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -132,6 +143,33 @@
         padding: 0 32px;
     }
 
+    .landing > .container {
+        padding: 0 32px;
+        flex-direction: column;
+    }
+
+    .landing > .container > .hero {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .landing > .container > .hero > p {
+        width: 80%;
+    }
+
+    .landing > .container > .hero > .acts {
+        justify-content: center;
+    }
+
+    .landing > .container > .ilustrate {
+        width: 100%;
+    }
+
+    .landing > .container > .ilustrate > img {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -140,16 +178,54 @@
         padding: 0 16px;
     }
 
+    .landing > .container {
+        padding: 0 16px;
+    }
+
+    .landing > .container > .hero  {
+        gap: 24px;
+        text-align: center;
+        padding-top: 32px;
+    }
+
+    .landing > .container > .hero > h2 {
+        font-size: 32px;
+    }
+
+    .landing > .container > .hero > .acts {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .landing > .container > .hero > .acts > a{
+        width: 80%;
+        text-align: center;
+        
+    }
+
+    .more {
+        padding: 16px 32px;
+        border: 1px solid #9a9a9a;
+        justify-content: center;
+        border-radius: 32px;
+    }
+
+    .menus {
+        width: 75%;
+    }
+
 }
 
 @media (max-width: 375px) {
+
+    .landing > .container > .hero  {
+        padding-top: 16px;
+    }
 
 }
 
 @media (max-width: 320px) {
 
-    .menus {
-        width: 75%;
-    }
+    
 
 }

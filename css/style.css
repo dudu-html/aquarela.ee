@@ -32,12 +32,13 @@ header {
 
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #d2d2d2;
+    /* border-bottom: 1px solid #d2d2d2; */
     padding: 0 80px;
 
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 10;
     background-color: #ffff;
 
 }
@@ -96,7 +97,7 @@ header > nav {
 }
 
 .social-icons > hr {
-    width: 4px;
+    width: 2px;
     height: 80%;
     background-color: #000;
     opacity: 80%;
@@ -111,12 +112,14 @@ header > nav {
 .secundary-navigation > .cta-header {
     background-color: #000;
     color: #fff;
-    padding: 8px 24px;
+    padding: 8px 32px;
     text-decoration: none;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 32px;
     font-weight: bolder;
     letter-spacing: 0.05em;
+    background-color: #40BCED;
+
 }
 
 .logoHeader {
@@ -138,20 +141,120 @@ main {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
     margin-top: var(--alturaHeader);
 }
 
 section {
     width: 100%;
     height: calc(100vh - var(--alturaHeader));
-    border: 30px solid green;
+    /* border: 10px solid green; */
 }
 
 #s1 {
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #s2 {
-    background-color: red;
+    /* background-color: red; */
+}
+
+/*  */
+
+.landing {
+    /* background-color: pink; */
+    width: 100%;
+    /* border: 1px solid red; */
+    border: none;
+    height: auto;
+}
+
+.landing > .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    /* background-color: palegreen; */
+    padding: 0 80px;
+
+}
+
+.landing > .container > .hero {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+}
+
+    .landing > .container > .hero > h2 {
+        font-size: 56px;
+    }
+
+    .landing > .container > .hero > p {
+        font-size: 16px;
+    }
+
+    .landing > .container > .hero > .acts {
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .cta-lp {
+        background-color: #000;
+        color: #fff;
+        padding: 16px 40px;
+        border-radius: 32px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+
+    }
+
+    .more {
+        /* background-color: green; */
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+
+    .more > ion-icon {
+        font-size: 16px;
+        transition: .2s;
+    }
+
+    .more:hover > ion-icon {
+        transform: translateX(4px);
+    }
+
+.landing > .container > .ilustrate {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.landing > .container > .ilustrate > img {
+    height: auto;
+    width: 100%;
+    
+}
+
+.separetor {
+    width: 100%;
+    height: 112px;
+    background-color: #40BCED;
+}
+
+.cta {
+    background-color: #40BCED;
 }
